@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>РазработОЧКА</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/logo.jpg" sizes="32x32">
+</head>
+  
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="feat.html">Преимущества</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="weed.html">Наши работы</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Выпадающий список
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Действие</a>
+          <a class="dropdown-item" href="#">Другое действие</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">И что-то еще</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<main class="main">
+  <div class="container">
+    <div class="header">
+      <div class="row align-items-center">
+      <div class="col-xl-1 col-lg-2 col-md-2 col-xs-12">
+      <div class="logo">
+        <img src="img/logo1.jpg" alt="logo">
+      </div>
+      </div>
+      <div class="col-xl-2 offset-xl-9 col-lg-3 offset-lg-7 col-md-3 offset-md-3 offset-xs-4 col-xs-4 offset-xs-4">
+          <button class="phone-link popap-btn">Заказать</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="main-content">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12">
+          <div class="main-title">
+            <h1>Добро пожаловать. Тут мы предлагаем заказать у нас простой одностраничный сайт</h1>
+            <p class="main-subtitle">Так же вы можете ознакомиться с нашими видами работ.</p>
+            <span>
+              Начните получать своих первых клиентов уже сейчас!
+            </span>
+          </div>
+        </div> 
+        <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1  offset-md-2 col-md-8 offset-md-2 ">
+          <div class="main-form">
+            <h2 class="main-form-header">Оставить заявку</h2>
+            <form action="#">
+              <label for="#">Как к вам обращаться</label>
+              <input class="main-form-input" type="text" name="" id="">
+              <label for="#">Номер телефона</label>
+              <input class="main-form-input" type="text" name="" id="">
+              <button class="main-form-btn button" type="submit" data-toggle="modal" data-target="#govno">ЗаявОЧКА</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</main>
+
+
+<div class="popap">
+  <div class="popap-dialog">
+    <div class="popap-content">
+      <button class="popap-close">&times;</button> 
+        <h4 class="popap-header">Задать Вопрос</h4>
+        <div class="main-form popap-form">
+          <form action="#">
+             <label for="#">Имя</label>
+              <input class="main-form-input" type="text" name="" id="">
+              <label for="#">Что вы хотите получить?</label>
+              <input class="main-form-input" type="text" name="" id="">
+              <label for="#">Ваш вопрос</label>
+              <textarea class="main-form-input" rows="7"></textarea>
+              <button class="main-form-btn button" type="submit" data-toggle="modal" data-target="#sex">SEND</button>
+          </form>
+        </div>  
+    </div>
+  </div>
+</div>
+<!-- jq -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- фоторама -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</script>
+<!-- js  файлы -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+
+<script>
+  $(document).ready(function(){
+  $('.popap-btn').click(function(event) {
+    event.preventDefault();
+  $('.popap').fadeIn('fast', function() {
+        });
+    });
+  $('.popap-close').click(function(event) {
+   event.preventDefault();
+
+  $('.popap').fadeOut('fast', function() { 
+        });
+    });
+});
+
+</script>
+
+<div class="modal fade" id="sex">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" >ОOaoaoaooaoa mmmm</h4>
+      </div>
+      <div class="modal-body" style="font-size: 20px;">
+        <p>Мы получили ваш вопрос. Скоро на него ответим. Все вопросы принимаются в порядке очереди&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">SEX</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="govno">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">А куда заявОЧКА то?</h4>
+      </div>
+      <div class="modal-body" style="font-size: 20px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sapiente sint iusto autem saepe ut, repudiandae repellendus sequi error iste.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Cumque fuga nihil magni voluptatem nam, dolore ab illo, nulla earum repudiandae, optio. Ex excepturi veniam, nesciunt in optio deleniti maiores, illo eius perspiciatis vel, culpa dolorum explicabo ipsum voluptatibus dolore, repudiandae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque provident velit debitis ad eos, dolores neque soluta, consequatur, repudiandae hic minus. Quidem atque eligendi, commodi excepturi perferendis pariatur dignissimos fugiat!
+        Beatae, optio pariatur ex in, vero odit facilis nam, ullam sequi suscipit eveniet esse quae, ea labore quod. A aliquam, commodi excepturi provident consectetur explicabo doloribus beatae sequi totam! Deleniti.
+        Corporis quo sunt dignissimos ipsam fugiat necessitatibus ratione dicta quod aut, a in laborum numquam suscipit sapiente architecto. Aperiam ducimus odio reiciendis similique aliquid veniam, adipisci corporis et consectetur omnis.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">ДА!!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+</html>
